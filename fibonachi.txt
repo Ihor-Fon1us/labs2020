@@ -1,0 +1,20 @@
+namespace Fibonachi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Input number from 1 to ...");
+
+            int m = int.Parse(Console.ReadLine());
+            int k = 0, j = 1, fib = 0;
+	    for(int i = 1; i <= m; i++)
+            {
+		Console.Write(fib + “ “);
+		fib = k + j;
+		j = k;
+		k = fib;
+	    }	
+        }
+    }
+}
